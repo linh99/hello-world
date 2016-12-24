@@ -1,0 +1,14 @@
+<meta charset="utf=8">
+<script>
+
+var deposit = parseInt(prompt('Input deposit, USD'));
+var period = parseInt(prompt('Input period, years'));
+var rate = parseInt(prompt('Input rate, %'));
+var year;
+
+for (year=1; year<=period; year++) {
+	deposit=deposit+deposit*rate/100;
+	alert('Deposit after '+year+' years will be: '+Math.floor(deposit)+' USD');
+}
+
+</script>
