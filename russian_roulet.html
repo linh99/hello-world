@@ -1,0 +1,20 @@
+<meta charset='utf-8'>
+<script>
+
+n = 0;
+
+if (prompt('Lets play a game. To play press 1') == '1') {
+	do { if (Math.random() * 6 < 1) {
+		n++;
+		alert('Game over! You played ' + n + ' rounds');
+		break;
+		}
+
+		n++;
+		alert('You survived ' + n + ' rounds')
+		
+	} while (prompt('To play more press 1') == '1')
+} else {
+	alert('Okay');
+}
+</script>
